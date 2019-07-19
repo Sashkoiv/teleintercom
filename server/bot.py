@@ -13,7 +13,7 @@ else:
     raise AssertionError("Please configure API_TOKEN as environment variables")
 
 if "MQTT_IP" in os.environ:
-    MQTT_IP = os.environ['TELEIMQTT_IPNTERCOM_TOKEN']
+    MQTT_IP = os.environ['MQTT_IP']
 else:
     print ('MQTT_IP is not set')
     raise AssertionError("Please configure MQTT_IP as environment variables")
